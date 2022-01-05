@@ -66,7 +66,7 @@ coroutine.resume(coroutine.create(function()
     while wait(3.8) do
         for _,z in next, game.Players:GetPlayers() do
             if z~=lp then
-                game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("/w " .. z.Name .. " " .. _G.thingtosay)
+                game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("" .. z.Name .. " " .. _G.thingtosay,"All")
                 wait(3.8)
             end
         end
